@@ -220,4 +220,7 @@ color: #878D96;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
+
+
+
 }
