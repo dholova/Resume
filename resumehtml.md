@@ -1,162 +1,226 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/styles.css">
-    <title>resume</title>
-</head>
-<body>
-    <!-- Main-->
-    <div class="main">
-        <!-- Main content-->
-        <div class="main_content">
-            <!--about user-->
-            <div class="about">
-            <h2 class="about_position">Junior Python Developer</h2>
-            <h1 class="about_name">Daniil Holovachov</h1>
-            <p class="about_description">Novice specialist. Purposeful enough to find the answer to the question. </p>
-            
-            </div>
-            <!--Projects-->
-            <div class="project">
-            <h3 class="title">Projects</h3>
-            <ol class="project_list">
-                <li class="project_item">
-                    <span class="project">
-                        <a href="https://github.com/dholova/ValStrTelBot" class="project_link">https://github.com/dholova/ValStrTelBot</a>
-                        ........
-                        <span class="project_bracket">[</span> Python <span class="project_bracket">]</span>
-                    </span>
-                </li>
-                <li class="project_item">
-                    <span class="project">
-                        <a href="https://cryptohub.goit.global/" class="project_link">https://cryptohub.goit.global/</a>
-                        .........
-                        <span class="project_bracket">[</span> JavaScript <span class="project_bracket">]</span>
-                    </span>
-                </li>
-                <li class="project_item">
-                    <span class="project">
-                        <a href="https://kidslike.goit.global/" class="project_link">https://kidslike.goit.global/</a>
-                        ..............
-                        <span class="project_bracket">[</span> React.js, Node.js  <span class="project_bracket">]</span>
-                    </span>
-                    
-                </li>
+body {
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #F5F7FA;
 
-            </ol>
-            </div>
-            <!--Practice-->
-            <div class="work">
-                <h3 class="title">Experience / IT related educational practice</h3>
-                <!--Course 1-->
-                <div>
-                    <h4 class="work_position">Certificates of completion of courses<span class="organisation"> Stepik </span></h4>
-                    <p class="period">March 2022 - up to now   <span class="line">|</span>   Online</p>
-                    <ul class="work_list">
-                        <li class="work_list_time">«Programming in Python»(89%) </li>
-                        <li class="work_list_time">«"Generation Python": course for beginners»(95%)</li>
-                        <li class="work_list_time">«"Generation Python": course for advanced»(70%)</li>
-                        <!-- <li class="work_list_time">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod. </li> -->
+}
+/* main styles */
+.main {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 1200px;
+    margin: 0 auto;
+}
+.main_content {
+    background-color: #FFFFFF;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+    padding: 105px 90px
+}
+/* about styles */
+.about {
+    margin-bottom: 40px;
+}
+.about_position {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    
+    
+    color: #000000;
+    margin-bottom: 20px;
+    
+}
+.about_name {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 55px;
+    
+    color: #851B28;
+    margin-bottom: 25px;
+}
+.about_description {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;  
+    
+    color: #595959;
+    width: 400px;
+    
+}
+/* project styles */
+.project {
+  margin-bottom: 50px;
+}
+.title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;  
+    color: #000000;
+    margin-bottom: 10px;
+}
+.project_list {
+    padding: 0px;
+    margin-left: 15px;
+}
+.project_item {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
 
-                    </ul>
-                </div>
-                <!--Course 2-->
-                <div>
-                    <h4 class="work_position">Certificate of completion of course<span class="organisation"> Cyber Bionic systematics </span></h4>
-                    <p class="period">June 2022 <span class="line">|</span>   Online</p>
-                    <ul class="work_list">
-                        <li class="work_list_time">Python Starter (840/100)</li>
-                        <!-- <li class="work_list_time">Quis ipsum suspendisse ultrices gravida.</li> -->
-                        <!-- <li class="work_list_time">Risus commodo viverra maecenas.  </li> -->
 
-                    </ul>
-                </div>
-                <!--Course 3-->
-                <div>
-                    <h4 class="work_position">Certificate of completion of online marathon<span class="organisation"> GoIT </span></h4>
-                    <p class="period">Jule 2022<span class="line">|</span>   Online</p>
-                    <ul class="work_list">
-                        <li class="work_list_time">GoIT English HTML</li>
-                        <!-- <li class="work_list_time">Quis ipsum suspendisse ultrices gravida.</li> -->
-                        <!-- <li class="work_list_time">Risus commodo viverra maecenas.  </li> -->
+color: #000000;
+}
+.project, 
+.project_link{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
 
-                    </ul>
-                </div>
+    color: #595959;
+}
+.project_link {
+    margin-left: 10px;
+}
+.project_bracket {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
 
-            </div>
-           
-            <!--Education-->
-             <div class="education">
-            <h3 class="title">Education</h3>
-                <h4 class="organisation">The Educational and Scientific Institute of Economics and Management, NUFT</h4>
-                <h5 class="specialisation">Human resources management and labor economics, Master</h5>
-                <p class="period">September 2016 - February 2022   <span class="line">|</span> Kyiv,Ukraine</p>
-            </div>
-            <!--Other courses-->
-            <div>
-                <h3>Additional education </h3>
-                <h4 class="organisation">Spacedeer English Anti School</h4>
-                <h5 class="specialisation">The intensive course B1 (Intermediate)</h5>
-                <p class="period">February 2020 - June 2020   <span class="line">|</span> Kyiv,Ukraine</p>
-            </div>
-        </div>
-        <!-- Sidebar-->
-        <aside class="sidebar">
-            <img src="img/photo_2022-07-20_15-13-24.jpg" alt="user photo" class="photo">
-            <!--Contacts-->
-            <div class="contacts">
-                <h3 class="sidebar_title">Contacts</h3>
-                <div>
-                   <p>
-                    <span class="contact_type">C:</span>  <a href="tel:+380 95 65 903 99" class="contact_link">+380 95 65 903 99</a></p>
-                   <p>
-                    <span class="contact_type">E:</span>  <a href="mailto:olovachev.d.official@gmail.com" class="contact_link">golovachev.d.official@gmail.com</a> </p> 
-                   
-                </div>
-            </div>
-            <!--Tech skills-->
-            <div class="tech_skills">
-                <h3 class="sidebar_title">Tech Skills</h3>
-                <ul class="tech_skills_list">
-                    <li class="tech_skills_item"> <span class="tech_skills_text">PYTHON</span> </li>
-                    <li class="tech_skills_item"> <span class="tech_skills_text">REST API</span></li>
-                    <li class="tech_skills_item"> <span class="tech_skills_text">ООП</span></li>
-                    <li class="tech_skills_item"> <span class="tech_skills_text">HTML5</span></li>
-                    <li class="tech_skills_item"> <span class="tech_skills_text">CSS3</span></li>
-                    <li class="tech_skills_item"> <span class="tech_skills_text">GIT</span></li>
-                    <!-- <li class="tech_skills_item"> <span class="tech_skills_text"></span></li> -->
+    color: #000000;
 
-                </ul>
-            </div>
-            <!--Softskills-->
-            <div class="soft_skills">
-                <h3 class="sidebar_title">Soft Skills</h3>
-                <ul class="soft_skills_list">
-                    <li class="soft_skills_item"> <span class="soft_skills_text">Adaptability </span> </li>
-                    <li class="soft_skills_item"> <span class="soft_skills_text">Communication </span> </li>
-                    <li class="soft_skills_item"> <span class="soft_skills_text">Creative thinking</span> </li>
-                    <li class="soft_skills_item"> <span class="soft_skills_text">Teamwork</span> </li>
+}
+/* work styles */
+.work {
 
-                </ul>
-            </div>
-            <!--language lvl-->
-            <div class="languages">
-                <h3 class="sidebar_title">Laguages</h3>
-                <ul class="language_list">
-                    <li class="languages_item"> <span class="languages_text">English ......... B1</span></li>
-                    <li class="languages_item"> <span class="languages_text">Ukrainian ..... C2</span></li>
-                    <li class="languages_item"> <span class="languages_text">German ........ A2</span></li>
-                    <li class="languages_item"> <span class="languages_text">Russian ........ C2</span></li>
+}
+.work_position {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    color: #000000;
+    margin-bottom: 10px ;
+}
+.organisation {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FB6D3A;
 
-                </ul>
-            </div>
-        </aside>
-    </div>
-</body>
-</html>
+}
+.period {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #A8A8A8;
+    margin-bottom: 10px;
+}
+.line {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000000;
+}
+.work_list {
+    padding: 0px;
+    margin-left: 15px;
+}
+.work_list_time {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #595959;
+}
+/* education styles */
+.education {
+}
+.specialisation {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+
+}
+.sidebar {
+    background-color: #1e2939;
+    padding-top: 40px;
+    width: 370px;
+}
+.photo {
+    width: 370px;
+    margin-bottom: 50px;
+}
+.contacts,
+.tech_skills,
+.soft_skills,
+.languages {
+    margin-left: 40px;
+}
+.contacts,
+.tech_skills,
+.soft_skills {
+    margin-bottom: 50px;
+}
+.sidebar_title {
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    margin-bottom: 10px;
+}
+.contact_type {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #878D96;
+    margin-right: 10px;
+
+}
+.contact_link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+
+
+color: #878D96;
+}
+.tech_skills_list,
+.soft_skills_list,
+.language_list {
+    color: #FFFFFF;
+    padding: 0px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.tech_skills_item,
+.soft_skills_item,
+.languages_item {
+    color: #FB6D3A;
+}
+.tech_skills_text,
+.soft_skills_text,
+.languages_text {
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+
+
+
+}
