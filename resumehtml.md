@@ -19,10 +19,7 @@
             <div class="about">
             <h2 class="about_position">Junior Python Developer</h2>
             <h1 class="about_name">Daniil Holovachov</h1>
-            <p class="about_description">Lorem ipsum dolor sit amet, consectetur 
-            adipiscing elit, sed do eiusmod tempor incididunt
-            ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. 
-            Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+            <p class="about_description">Novice specialist. Purposeful enough to find the answer to the question. </p>
             
             </div>
             <!--Projects-->
